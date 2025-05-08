@@ -25,22 +25,7 @@ const projects = [
     demo: 'DEMO LINK',
     code: 'https://github.com/AnastasiiaKorolko/creativeBakery-landing.git',
   },
-  {
-    id: '4',
-    title: 'People-table',
-    description: 'A responsive landing page showcasing people information with smooth animations.',
-    tech: ['React', 'useParams'],
-    demo: 'DEMO LINK',
-    code: 'https://github.com/AnastasiiaKorolko/creativeBakery-landing.git',
-  },
-  {
-    id: '5',
-    title: 'People-table',
-    description: 'A responsive landing page showcasing people information with smooth animations.',
-    tech: ['React', 'useParams'],
-    demo: 'DEMO LINK',
-    code: 'https://github.com/AnastasiiaKorolko/creativeBakery-landing.git',
-  },
+  
 ];
 
 export default function Projects() {
