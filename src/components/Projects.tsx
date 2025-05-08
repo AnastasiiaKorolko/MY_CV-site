@@ -5,7 +5,7 @@ const projects = [
     id: '1',
     title: 'E-commerce',
     description: 'A dynamic e-commerce web application for browsing and purchasing mobile devices and accessories.',
-    tech: ['React', 'CSS'],
+    tech: ['React', 'Redux', 'TypeScript', 'SCSS', 'REST API'],
     demo: 'https://AnastasiiaKorolko.github.io/phone-catalog_react/',
     code: 'https://github.com/AnastasiiaKorolko/phone-catalog_react.git',
   },
@@ -13,7 +13,7 @@ const projects = [
     id: '2',
     title: 'Bakery Landing Page',
     description: 'A responsive landing page for a bakery business showcasing their products and services.',
-    tech: ['HTML', 'CSS'],
+    tech: ['HTML', 'JavaScript', 'Flexbox', 'Grid', 'SCSS'],
     demo: 'https://anastasiiakorolko.github.io/react_people-table-advanced/',
     code: 'https://github.com/AnastasiiaKorolko/creativeBakery-landing.git',
   },
@@ -21,7 +21,7 @@ const projects = [
     id: '3',
     title: 'People-table',
     description: 'A responsive landing page showcasing people information with smooth animations.',
-    tech: ['React', 'useParams'],
+    tech: ['React', 'TypeScript',],
     demo: 'DEMO LINK',
     code: 'https://github.com/AnastasiiaKorolko/creativeBakery-landing.git',
   },
@@ -108,7 +108,7 @@ export default function Projects() {
                   variant="body2"
                   sx={{ mb: 2, marginTop: 'auto' }}
                 >
-                  <b>Технології:</b> {project.tech.join(', ')}
+                  <b>Technologies:</b> {project.tech.join(', ')}
                 </Typography>
                 
                 <Box sx={{ 
