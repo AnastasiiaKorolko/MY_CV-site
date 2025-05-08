@@ -48,7 +48,8 @@ export default function App() {
             py: 1,
             boxShadow: '0 2px 8px rgba(0, 0, 0, 0.5)', 
             mt: 2,
-            mb: 2, }}>
+            mb: 2,
+            mr: 2, }}>
           <Avatar 
             alt="Korolko Anastasia" 
             src="./4.png" 

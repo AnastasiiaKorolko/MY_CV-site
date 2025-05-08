@@ -1,7 +1,8 @@
 import { Box, Card, CardContent, Typography, Button, Grid, Divider } from '@mui/material';
 
 const projects = [
-  {
+  { 
+    id: '1',
     title: 'E-commerce',
     description: 'A dynamic e-commerce web application for browsing and purchasing mobile devices and accessories.',
     tech: ['React', 'CSS'],
@@ -9,6 +10,7 @@ const projects = [
     code: 'https://github.com/AnastasiiaKorolko/phone-catalog_react.git',
   },
   {
+    id: '2',
     title: 'Bakery Landing Page',
     description: 'A responsive landing page for a bakery business showcasing their products and services.',
     tech: ['HTML', 'CSS'],
@@ -16,6 +18,23 @@ const projects = [
     code: 'https://github.com/AnastasiiaKorolko/creativeBakery-landing.git',
   },
   {
+    id: '3',
+    title: 'People-table',
+    description: 'A responsive landing page showcasing people information with smooth animations.',
+    tech: ['React', 'useParams'],
+    demo: 'DEMO LINK',
+    code: 'https://github.com/AnastasiiaKorolko/creativeBakery-landing.git',
+  },
+  {
+    id: '4',
+    title: 'People-table',
+    description: 'A responsive landing page showcasing people information with smooth animations.',
+    tech: ['React', 'useParams'],
+    demo: 'DEMO LINK',
+    code: 'https://github.com/AnastasiiaKorolko/creativeBakery-landing.git',
+  },
+  {
+    id: '5',
     title: 'People-table',
     description: 'A responsive landing page showcasing people information with smooth animations.',
     tech: ['React', 'useParams'],
@@ -27,18 +46,31 @@ const projects = [
 export default function Projects() {
   return (
     <Box mb={6} sx={{ width: '100%' }}>
-      <Typography variant="h5" mb={6} gutterBottom>
+      <Typography variant="h5" mb={4} gutterBottom>
         Projects
       </Typography>
-      <Grid container spacing={3} justifyContent="flex-start" direction="row" wrap="nowrap" sx={{ overflowX: 'auto', pb: 2 }}>
+      <Grid 
+        container spacing={3} 
+        justifyContent="flex-start" 
+        direction={{ xs: 'column', sm: 'row' }} 
+        wrap={{ xs: 'wrap', sm: 'nowrap' }} 
+        sx={{ 
+          overflowX: { xs: 'visible', sm: 'auto'},
+           pb: 2 
+        }}
+      >
         {projects.map((project) => (
-          <Grid item xs="auto" sx={{ minWidth: 280, maxWidth: 340 }} key={project.title}>
+          <Grid 
+            item xs="auto" 
+            sx={{ minWidth: 280, maxWidth: 340 }} 
+            key={project.title}>
             <Card
               sx={(theme) => ({
                 height: '100%',
                 width: '100%',
                 display: 'flex',
                 flexDirection: 'column',
+                justifyContent: 'space-between',
                 border: '1px solid rgba(255, 215, 0, 0.3)',
 
                 borderRadius: '16px',
@@ -57,34 +89,49 @@ export default function Projects() {
                 },
               })}
             >
-              <CardContent sx={{ flexGrow: 1, position: 'relative' }}>
-                {/* <Box 
+              <CardContent sx={{ 
+                flexGrow: 1, 
+                position: 'relative',
+                display: 'flex',
+                flexDirection: 'column', }}>
+                <Box 
                   sx={{ 
                     position: 'absolute', 
                     top: 12, 
                     right: 12, 
-                    width: 40, 
-                    height: 40, 
+                    width: 30, 
+                    height: 30, 
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
                     borderRadius: '50%', 
                     background: 'linear-gradient(135deg, rgba(103, 58, 183, 0.8), rgba(92, 107, 192, 0.2))',
                     opacity: 0.7
                   }} 
-                /> */}
-                <Typography variant="h6" fontWeight="bold" gutterBottom>
+                  >
+                  {project.id}
+                  </Box>
+                <Typography variant="h6" fontWeight="bold" gutterBottom sx={{ mb: 1, pt: 3}}>
                   {project.title}
                 </Typography>
                 <Typography color="text.secondary" sx={{ mb: 2 }}>
                   {project.description}
                 </Typography>
+                <Box sx={{ flexGrow: 1 }} />
                 <Divider sx={{ my: 1.5 }} />
-                <Typography variant="body2" sx={{ mb: 2 }}>
+                <Typography 
+                  variant="body2"
+                  sx={{ mb: 2, marginTop: 'auto' }}
+                >
                   <b>Технології:</b> {project.tech.join(', ')}
                 </Typography>
+                
                 <Box sx={{ 
                   display: 'flex', 
                   gap: 1,
                   justifyContent: 'flex-start',
-                  mt: 'auto' 
+                  P: 2,
+                  marginTop: 'auto' 
                 }}>
                   <Button 
                     size="small" 

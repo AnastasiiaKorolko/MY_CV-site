@@ -9,19 +9,19 @@ export default function Contact() {
     {
       icon: <EmailIcon />,
       label: 'Email',
-      value: 'anastasiia.korolko.dev@gmail.com',
+      value: 'anastasiia.korolko.dev',
       link: 'mailto:anastasiia.korolko.dev@gmail.com'
     },
     {
       icon: <GitHubIcon />,
       label: 'GitHub',
-      value: 'github.com/AnastasiiaKorolko',
-      link: 'https://github.com/AnastasiiaKorolko'
+      value: 'github.AnastasiiaKorolko',
+      link: 'https://bit.ly/4jHMFZL'
     },
     {
       icon: <LinkedInIcon />,
       label: 'LinkedIn',
-      value: 'linkedin.com/in/anastasia-korolko-299a0b353',
+      value: 'linkedin.anastasia-korolko',
       link: 'https://www.linkedin.com/in/anastasia-korolko-299a0b353/'
     },
     {

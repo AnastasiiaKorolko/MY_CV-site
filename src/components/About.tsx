@@ -4,12 +4,13 @@ import WebIcon from '@mui/icons-material/Web';
 import SchoolIcon from '@mui/icons-material/School';
 import { useState } from "react";
 const skills = [
-  "React", "Redux", "TypeScript", "JavaScript", "HTML5", "CSS3", "SCSS", "REST API", "React Query", "Material UI", "Git", "Responsive Design"
+  "React", "Redux", "TypeScript", "JavaScript", "HTML5", "CSS3", "SCSS", "REST API", "React Query", "Material UI", "Git", 
+  "Responsive Design", 'Tailwind', "Zustland", "Mobx", "Webpac", "Formic",
 ];
 
 const education = [
   {
-    title: "Mateacademy",
+    title: "Mate academy",
     period: "2023 - 2024",
     description: "Full Stack course"
   },
@@ -43,24 +44,28 @@ export default function About() {
         elevation={0} 
         sx={{ 
           p: 3, 
-          mb: 4, 
+          mb: 6, 
           borderRadius: 2, 
           bgcolor: 'rgba(200, 200, 200, 0.08)',
           
         }}
       >
         
-        <Typography variant="body1" >
+        <Typography variant="body1" sx={{ lineHeight: '1.8', letterSpacing: '0.05em',}}>
         Driven front-end developer with a strong foundation in JavaScript,
-React, Redux, TypeScript, SCSS, HTML, CSS, Git and basic
-backend knowledge (Node.js, Express).
-        I have a passion for creating user-friendly and aesthetic interfaces. 
-        I constantly improve my skills and explore new technologies.
+        React, Redux, Next.js, Angular, RTK Query, TypeScript, SCSS,
+        HTML, CSS, Git and basic backend knowledge (Node.js, Express).
+        Built three projects, including a React-based phone catalog and a
+        responsive landing page with optimized loading speed. Formerly a
+        designer, improved workflows by 50%, honing attention to detail
+        and adaptability. Passionate about problem-solving, clean code,
+        and performance optimization. Familiar with Scrum, Agile, and
+        version control workflows.
         </Typography>
       </Paper>
       
       <Box sx={{ mb: 6 }}>
-        <Typography variant="h6" fontWeight="medium" gutterBottom >
+        <Typography variant="h6" fontWeight="medium" gutterBottom sx={{ mb: 4 }}>
         Education and Training
         </Typography>
         
@@ -84,7 +89,7 @@ backend knowledge (Node.js, Express).
                       {item.title}
                     </Typography>
                     {item.description && (
-                      <Typography variant="body2" sx={{ mt: 0.5 }}>
+                      <Typography variant="body2" sx={{ mt: 0.5 , mb: 1.5}}>
                         {item.description}
                       </Typography>
                     )}
@@ -101,7 +106,7 @@ backend knowledge (Node.js, Express).
       
       <Box>
         
-        <Typography variant="h6" fontWeight="medium" gutterBottom>
+        <Typography variant="h6" fontWeight="medium" gutterBottom sx={{ mb: 3}}>
         Technical Skills
         </Typography>
         <Box sx={{ display: 'flex', flexWrap: 'wrap', gap: 1, mb: 3 }}>
