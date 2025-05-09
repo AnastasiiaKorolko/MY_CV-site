@@ -1,10 +1,10 @@
 import { Box, Card, CardContent, Typography, Button, Grid, Divider } from '@mui/material';
 
 const projects = [
-  { 
+  {
     id: '1',
-    title: 'E-commerce',
-    description: 'A dynamic e-commerce web application for browsing and purchasing mobile devices and accessories.',
+    title: 'TechSavvy Store',
+    description: 'TechSavvy Store is a dynamic and responsive web application for browsing and purchasing mobile devices, tablets, and accessories. It offers a seamless shopping experience with features like adding products to the cart, marking favorites, and viewing detailed product information, including multiple color options. Users can easily explore various devices and accessories, with an intuitive interface and smooth navigation.',
     tech: ['React', 'Redux', 'TypeScript', 'SCSS', 'REST API'],
     demo: 'https://AnastasiiaKorolko.github.io/phone-catalog_react/',
     code: 'https://github.com/AnastasiiaKorolko/phone-catalog_react.git',
@@ -12,18 +12,26 @@ const projects = [
   {
     id: '2',
     title: 'Bakery Landing Page',
-    description: 'A responsive landing page for a bakery business showcasing their products and services.',
+    description: 'A responsive landing page for a bakery business showcasing their delicious products and services, including a variety of donuts, cakes, and burgers. The site provides an easy-to-navigate interface with vibrant images of baked goods, offering a visual feast for customers. The design incorporates modern web technologies to ensure a smooth user experience across devices.',
     tech: ['HTML', 'JavaScript', 'Flexbox', 'Grid', 'SCSS'],
-    demo: 'https://anastasiiakorolko.github.io/react_people-table-advanced/',
+    demo: 'https://anastasiiakorolko.github.io/creativeBakery-landing/',
     code: 'https://github.com/AnastasiiaKorolko/creativeBakery-landing.git',
   },
   {
     id: '3',
-    title: 'People-table',
-    description: 'A responsive landing page showcasing people information with smooth animations.',
-    tech: ['React', 'TypeScript',],
-    demo: 'DEMO LINK',
-    code: 'https://github.com/AnastasiiaKorolko/creativeBakery-landing.git',
+    title: 'SmartAddons',
+    description: 'A modern landing page dedicated to device accessories. Explore a wide selection of high-quality headphones, charging stations, and more. Designed for comfort, style, and functionality.',
+    tech: ['HTML', 'JavaScript', 'Flexbox', 'Grid', 'SCSS'],
+    demo: 'https://anastasiiakorolko.github.io/accessories-landing/',
+    code: 'https://github.com/AnastasiiaKorolko/accessories-landing.git',
+  },
+  {
+    id: '4',
+    title: 'People Table',
+    description: 'A React-based application for efficiently managing and organizing your contacts. Easily view, sort, and filter a dynamic list of people with an intuitive and user-friendly interface. Perfect for keeping your contacts structured and accessible.',
+    tech: ['React', 'TypeScript', 'React Router', ],
+    demo: 'https://anastasiiakorolko.github.io/react_people-table-advanced/',
+    code: '',
   },
   
 ];
@@ -106,9 +114,11 @@ export default function Projects() {
                 <Divider sx={{ my: 1.5 }} />
                 <Typography 
                   variant="body2"
-                  sx={{ mb: 2, marginTop: 'auto' }}
+                  sx={{ mb: 4, marginTop: 'auto' }}
                 >
-                  <b>Technologies:</b> {project.tech.join(', ')}
+                   <Typography component="b" sx={{ fontSize: '0.9rem' }}>
+    Technologies:
+  </Typography>  {project.tech.join(', ')}
                 </Typography>
                 
                 <Box sx={{ 
